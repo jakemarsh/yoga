@@ -1,0 +1,38 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "main": ["<Yoga.module>"]
+  "test": ["<Yoga.module>"]
+  "Yoga.module": ["<Yoga.module>"]
+default: "main"
+commands: 
+  "/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGEnums.c.o":
+    tool: clang
+    description: "Compile Yoga YGEnums.c"
+    inputs: ["/Users/jakemarsh/github/yoga/yoga/YGEnums.c"]
+    outputs: ["/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGEnums.c.o"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-target","x86_64-apple-macosx10.10","--sysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk","-arch","x86_64","-mmacosx-version-min=10.10","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-O0","-fobjc-arc","-fmodules","-fmodule-name=Yoga","-I","/Users/jakemarsh/github/yoga/yoga/include","-fmodules-cache-path=/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-MD","-MT","dependencies","-MF","/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGEnums.c.d","-c","/Users/jakemarsh/github/yoga/yoga/YGEnums.c","-o","/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGEnums.c.o"]
+    deps: "/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGEnums.c.d"
+
+  "/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGNodeList.c.o":
+    tool: clang
+    description: "Compile Yoga YGNodeList.c"
+    inputs: ["/Users/jakemarsh/github/yoga/yoga/YGNodeList.c"]
+    outputs: ["/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGNodeList.c.o"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-target","x86_64-apple-macosx10.10","--sysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk","-arch","x86_64","-mmacosx-version-min=10.10","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-O0","-fobjc-arc","-fmodules","-fmodule-name=Yoga","-I","/Users/jakemarsh/github/yoga/yoga/include","-fmodules-cache-path=/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-MD","-MT","dependencies","-MF","/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGNodeList.c.d","-c","/Users/jakemarsh/github/yoga/yoga/YGNodeList.c","-o","/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGNodeList.c.o"]
+    deps: "/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGNodeList.c.d"
+
+  "/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/Yoga.c.o":
+    tool: clang
+    description: "Compile Yoga Yoga.c"
+    inputs: ["/Users/jakemarsh/github/yoga/yoga/Yoga.c"]
+    outputs: ["/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/Yoga.c.o"]
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-target","x86_64-apple-macosx10.10","--sysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk","-arch","x86_64","-mmacosx-version-min=10.10","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-O0","-fobjc-arc","-fmodules","-fmodule-name=Yoga","-I","/Users/jakemarsh/github/yoga/yoga/include","-fmodules-cache-path=/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/ModuleCache","-MD","-MT","dependencies","-MF","/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/Yoga.c.d","-c","/Users/jakemarsh/github/yoga/yoga/Yoga.c","-o","/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/Yoga.c.o"]
+    deps: "/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/Yoga.c.d"
+
+  "<C.Yoga.module>":
+    tool: phony
+    inputs: ["/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGEnums.c.o","/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/YGNodeList.c.o","/Users/jakemarsh/github/yoga/.build/x86_64-apple-macosx10.10/debug/Yoga.build/Yoga.c.o"]
+    outputs: ["<Yoga.module>"]
+
